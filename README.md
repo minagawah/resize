@@ -13,7 +13,7 @@ cp -p target/release/resize ~/
 cd ~
 
 # run
-./resize ~/Pictures/test.png 300
+./resize --path ~/Pictures/test.png --width 300
 # it will emit the new file 'test.new.png' in the same folder as the original image file resides.
 ```
 
