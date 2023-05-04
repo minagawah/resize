@@ -17,6 +17,24 @@ cd ~
 # it will emit the new file 'test.new.png' in the same folder as the original image file resides.
 ```
 
+## Notes
+
+### (a) cargo fmt
+
+Looking into [rustfmt.toml](rustfmt.toml),
+you see the setting:
+
+```toml
+format_strings = true
+```
+
+which works only for the Nightly build.  
+So, you need:
+
+```bash
+cargo +nightly fmt
+```
+
 ## License
 
 Dual-licensed under either of the followings.  
